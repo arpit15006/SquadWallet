@@ -1,0 +1,51 @@
+{
+  "name": "squad-wallet-agent",
+  "version": "1.0.0",
+  "description": "XMTP Agent for SquadWallet with AgentKit integration",
+  "main": "dist/agent.js",
+  "scripts": {
+    "dev": "tsx watch src/agent.ts",
+    "build": "tsc",
+    "start": "node dist/agent.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "@coinbase/agentkit": "^0.8.1",
+    "@coinbase/agentkit-langchain": "^0.3.0",
+    "@coinbase/cdp-agentkit-core": "^0.0.14",
+    "@coinbase/cdp-langchain": "^0.0.15",
+    "@coinbase/coinbase-sdk": "^0.0.15",
+    "@coinbase/onchainkit": "^0.38.14",
+    "@ensdomains/ensjs": "^4.0.2",
+    "@xmtp/xmtp-js": "^11.6.2",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1",
+    "node-cron": "^3.0.3",
+    "viem": "^2.31.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/node-cron": "^3.0.11",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "xmtp",
+    "agent",
+    "blockchain",
+    "wallet",
+    "coinbase",
+    "agentkit"
+  ],
+  "author": "SquadWallet Team",
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "squad-wallet",
+  "version": "1.0.0",
+  "description": "SquadWallet - A fully on-chain, messaging-native group wallet mini-app for Base",
+  "private": true,
+  "workspaces": [
+    "agent",
+    "frontend",
+    "contracts"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:agent\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:agent": "cd agent && npm run dev",
+    "build": "npm run build:contracts && npm run build:frontend && npm run build:agent",
+    "build:contracts": "cd contracts && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build:agent": "cd agent && npm run build",
+    "test": "npm run test:contracts && npm run test:agent",
+    "test:contracts": "cd contracts && npm run test",
+    "test:agent": "cd agent && npm run test",
+    "deploy:contracts": "cd contracts && npm run deploy",
+    "lint": "npm run lint:frontend && npm run lint:agent",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:agent": "cd agent && npm run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,sol}\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.1.0",
+    "prettier-plugin-solidity": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/squad-wallet.git"
+  },
+  "keywords": [
+    "blockchain",
+    "wallet",
+    "xmtp",
+    "base",
+    "defi",
+    "group-wallet",
+    "messaging",
+    "agent"
+  ],
+  "author": "SquadWallet Team",
+  "license": "MIT"
+}

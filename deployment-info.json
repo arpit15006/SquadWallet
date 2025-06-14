@@ -1,0 +1,11 @@
+{
+  "network": "baseSepolia",
+  "chainId": "84532",
+  "contracts": {
+    "XPBadges": "0xBa4d9F57ED3fB5a0c0a58BC1c34079B9b754016d",
+    "GameManager": "0x2Ef603deC1b9914405F24742aD8D074572B0E5cA",
+    "SquadWalletFactory": "0xA94333d421473Bd690731c04f948eD5412A18277"
+  },
+  "deployer": "0x97F14D6031B64F9e82153A69458b5b9Af8248EE6",
+  "deployedAt": "2025-06-10T06:26:10.459Z"
+}
